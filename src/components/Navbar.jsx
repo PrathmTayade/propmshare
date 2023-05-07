@@ -26,16 +26,16 @@ const Navbar = () => {
           alt="logo"
           width={30}
           height={30}
+          placeholder="empty"
           className="object-contain"
         />
-        <p className="logo_text">Promptopia</p>
+        <p className="logo_text">Prompshare</p>
       </Link>
 
       {/* Desktop Navigation */}
       <div className="sm:flex hidden">
         {session?.user ? (
           <div className="flex gap-3 md:gap-5">
-            
             <Link href="/new-prompt" className="black_btn">
               Create Post
             </Link>
@@ -50,6 +50,7 @@ const Navbar = () => {
                 width={37}
                 height={37}
                 className="rounded-full"
+                placeholder="empty"
                 alt="profile"
               />
             </Link>
